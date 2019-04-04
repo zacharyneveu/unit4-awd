@@ -15,7 +15,7 @@ The obvious replacement to Python 2 is Python 3. Python 3 has been in release fo
 The Julia language is, as the creators say, created for "greedy" programmers. The goal is to approach the speed of C, while allowing for the ease of use of Python or Matlab. In addition to this performance boost, Julia has several other advantages, such as the ability to directly call functions in c code, system commands and bash scripts and python scripts. This functionality makes Julia a great high-level scripting language, in addition to a fast low-level language. The ability to handle both of these uses in a single language can go a long way towards gluing together the heaps of c programs, shell scripts and python that hold most current projects together. Below are some examples of how Julia could simplify the stack on your next project.
 
 # Julia Examples
-## Calling C & Fortran Functions
+## Calling C Functions
 While Julia is efficient and can be very fast, there is already a ton of good code floating around written in C. For many current projects, hardware-oriented code is all written in C. Additionally, many great networking, numerical computing, and cryptography libraries are all written in C. Interfacing with these libraries is as easy as calling the `ccall()` function. The following example callsthe clock function in `libc` with no arguments and returns the result.
 
 ```julia
@@ -29,3 +29,14 @@ Another common usecase in which Julia excels is running terminal commands. Much 
 run(pipeline(`echo world` & `echo hello`, `sort`));
 ```
 
+
+## Calling Python Functions
+Python is the 3rd most used programming language in the world, while Julia is still relatively small. The Julia developers have made sure that Julia plays well with Python. Via the [PyCall](https://github.com/JuliaPy/PyCall.jl) package, it is possible to import Python libraries and use them as if they were native Julia libraries. This can be incredibly useful, particularly if someone has already taken the time to write a set of utility functions in hardware for interacting with a device or program. The following example is trivial, but shows the straightforward process of importing a python module and calling functions from Julia.
+```julia
+using PyCall
+math = pyimport("math")
+math.sin(math.pi / 4)
+```
+
+## Is Julia Right for Your Project?
+For many projects, Python 3 may be your best choice. Porting is straightforward, and if there are many developers who already know Python, this may make the most sense. For new projects, however, Julia offers an impressive set of features that just weren't around 10 years ago when Python 3 was introduced. In either case, the end of support for Python 2 will be a critical moment in the lives of many projects. Before migrating code, make sure that it is built on the right foundation.
