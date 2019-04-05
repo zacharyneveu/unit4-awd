@@ -1,11 +1,14 @@
+# Context Memo
+This paper is intended to be posted on one of the platforms used for organizational knowledge such as Confluence or Yammer, for developers across the company to read. The intended audience of this paper is the developers and project managers who would be in a position to mandate the technology stack used on their project. The main goal of this post is to raise awareness of a less known programming language that may be a very useful tool.
+
 # Migrating Legacy Python 2 Scripts
 
-Python 2 will not be maintained past 2020. Many scripts around the company rely on Python 2, and many should consider migrating to a supported version or another language.
+Python 2 will not be maintained past 2020. Many scripts around the company rely on Python 2. Most of these projects should consider migrating to a supported version of Python or another language.
 
-# Why Should Scripts be Migrated?
+# Why Migrate?
 The lack of support for Python 2 itself does not cause monumental problems. Many prominent Python packages are also dropping support for Python 2, however, and this is likely to cause problems. The list of packages that are dropping support is [huge](https://python3statement.org/), but some highlights include: TensorFlow, Pandas, SciPy, NumPy, MatPlotLib, pytest, and Jupyter. When adapting old scripts for use on a new project, new features of these libraries will inevitably become useful.
 
-# Are there any exceptions?
+# Are there Exceptions?
 Legacy embedded devices may only support Python 2. In these cases, it will be necessary to freeze all packages to versions that are compatible with Python 2. Additionally, if it is unlikely that a script will be used in future projects, it is probably not worth the effort to convert.
 
 # What Replaces Python 2?
