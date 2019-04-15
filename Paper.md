@@ -1,27 +1,3 @@
-# Context Memo
-For my last co-op I worked at Bose Corporation, a large audio electronics company. My work revolved around writing and maintaining a large collection of programs to test the features of current and future devices. These programs are largely the responsibility of hardware teams, who are out of touch with modern developments in programming languages. On co-op, this caused a variety of problems for me because programs were actively being developed using obsolete languages and tools. I wrote this article to present developments in the Python and Julia programming languages to hardware team leads so that they can select the proper language when updating their programs for future projects. Selecting a language is an important task for team leads that can save or cost hundreds of hours. The goal of this article is to provide practical advice to leads in this situation who may know very little about their options.
-
-This article is intended to be posted on one of the platforms used for organizational knowledge such as Atlassian Confluence. At Bose, Confluence is used as a place to store how-to articles, as well as documents about best practices. The goal of posting an article on Confluence is that if this topic comes up in a meeting or in a hallway conversation, it is easy to refer someone to the document for further reference. Documents on Confluence are generally written in a plaintext markup language, which Confluence renders into formatted text. For example, `#<Title>` will render as large title text, and `+ <bullet text>` will render as a bullet. This means that style decisions (fonts, colors, headings, lists, tables) are all pre-determined and standardized. Confluence costs money, so to write this article I have used Github, which is free for students and offers a very similar setup for wiki style articles written in Markdown language.
-
-Word Count of Paper: 877  
-Word Count of Context Memo: 384
-
-
-# Glossary of Terms
-| Term 		| Meaning						|
-|:----------|:------------------------------|
-|Python		|A popular programming language |
-|Julia		|A newer programming language 	|
-|Matlab		|A commercial language			|
-|JIT		|Just In Time compiler			|
-|IO			|Input/Output					|
-|Tensor Flow|A Python Library				|
-|Pandas		|A Python Library				|
-|SciPy		|A Python Library				|
-|NumPy		|A Python Library				|
-|MatPlotLib	|A Python Library				|
-|PyTest		|A Python Library				|
-|Jupyter	|A Python Library				|
 # Migrating Legacy Python 2 Scripts
 
 Python 2 will not be maintained past 2020. Many scripts around the company rely on Python 2. Most of these projects should consider migrating to a supported version of Python or another language.
@@ -64,19 +40,3 @@ math.sin(math.pi / 4)
 
 ### Is Julia Right for Your Project?
 For many projects, Python 3 may be your best choice. Porting is straightforward, and if your team already knows Python, this may make the most sense. For new projects, however, Julia offers an impressive set of features that were not available 10 years ago when Python 3 was introduced. In either case, the end of support for Python 2 will be a critical moment in the lives of many projects. Before migrating code, make sure that it is built on the right foundation.
-
-
-# Response Letter
-Dear Professor Templeton,
-
-Above is my final submission for Advanced Writing in the Technical Disciplines: Unit 4. This submission includes revisions based on feedback from Martin Boyle and Ryan Svendsen, as well as your weekly memo to the class.
-
-Ryan and Martin had almost identical feedback to my draft. Both suggested that the context memo should include significantly more information. This is consistent with your comments for revision, so I have focused largely on expanding the context memo. Both of my peer reviewers were interested in more background material about my intended audience, the programming languages I mention, and whether I was editing this article or writing it from scratch. In revision, I have significantly expanded the context memo to include more information about all of these.
-
-Both of my peer reviewers also shared very similar views about the content of my article. Both noted that it could benefit from trimming sentences to be simpler and use fewer words. In revision, I have made several editing passes to revise wordy sentences making content easier and faster to access. In a few places I have left extra words where they help keep my tone more casual. The reason for this is that along with being informational, this document must be somewhat persuasive. Updating programs takes a lot of work, and it is my job as the writer to convince program leads to put in this effort. Keeping a more familiar tone is essential is essential when persuading, so in some places I have sacrificed brevity for familiarity.
-
-Finally, I took as much advice as possible from your revision memo to the class. Changes based on your memo include a more complete description of my audience, revisions for brevity and clarity, and revisions for grammar and spelling. Wiki articles at Bose are generally written in a markup language, then rendered once posted. This means that all fonts, headers, and table styles are standardized. Unfortunately this means that I was not able to change the format of my document with the level of scrutiny that you mentioned in your memo. Fortunately, the automatic formatting of Confluence and Github largely help avoid the pitfalls you mentioned in your memo, using sans-serif fonts for the web and clean and well differentiated heading levels. I think you will find that the changes to both the context memo and content of my draft have added significant value to this revision.
-
-Thank you,
-Zachary Neveu
-
